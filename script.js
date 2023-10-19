@@ -1,18 +1,21 @@
 'use strict';
-
-
-
+const email_msg=document.querySelector('.mail_error');
+const pass_msg=document.querySelector('.pass_error');
+const pass_input=document.querySelector('#password');
+const mail_input=document.querySelector('#name');
 document.querySelector('.btn').addEventListener('click',function(){
     let a=document.querySelector('#name').value;
     let b=document.querySelector('#password').value;
     if(!a){
         document.querySelector('.msg').textContent="Enter name";
-        const email_msg=document.querySelector('.mail_error')
+        mail_input.style.border="2px solid red";
         email_msg.style.display="block";
     }
     else if(!b){
         document.querySelector('.msg').textContent="enter pasword";
-        const pass_msg=document.querySelector('.pass_error')
+        email_msg.style.display="none";
+        mail_input.style.border="none";
+        pass_input.style.border="2px solid red";
         pass_msg.style.display="block";
     }
     if(a && b){
