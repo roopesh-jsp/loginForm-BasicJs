@@ -78,4 +78,11 @@ a{
     list-style: none;
     color: rgb(234, 175, 65);
 }
+.mail_error ,.pass_error{
+    font-size: 15px;
+    color: #ff0000;
+    position: relative;
+    left:150px;
+    display: none;
+}
 
