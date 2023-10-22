@@ -8,14 +8,14 @@ document.querySelector('.btn').addEventListener('click',function(){
     let b=document.querySelector('#password').value;
     if(!a){
         document.querySelector('.msg').textContent="Enter name";
-        mail_input.style.border="2px solid red";
+        mail_input.style.border="3px solid purple";
         email_msg.style.display="block";
     }
     else if(!b){
         document.querySelector('.msg').textContent="enter pasword";
         email_msg.style.display="none";
         mail_input.style.border="none";
-        pass_input.style.border="2px solid red";
+        pass_input.style.border="3px solid purple";
         pass_msg.style.display="block";
     }
     if(a && b){
